@@ -573,11 +573,121 @@ while n <= 9:
 print("---------------")     
     
 
-
-
-
 convidados = 1
 while convidados <= 10:
    # print("Convidados estao todos presentes no momento!") 
     print(convidados)
     convidados = convidados + 1
+print("---------------")     
+
+
+# WHILE LOOP MULLTIPLES
+n = 10
+while n <= 90:               # prestar atencao no simbolo de > ou < pois estava fazendo confusao com eles e afetando drasticamento no resultado
+    print(n)
+    n = n + 10
+print("---------------")     #output: 10, 20, 30, 40, 50, 60, .... 90
+
+
+# ------ FOR LOOPS
+# The loop starts with a key word "for". 1- Next you need to specify the variable name, This variable will represent each item in the sequence. 3- After the varible name, you need to use the keyword "in". 4- Finally, you need to specify the sequence you want to iterate over. for exemple function = range(10). This function generates a sequence of numbers from 0 to 9. 10 is not included in the sequence.
+
+for num in range(13):
+    print(num)    
+print("---------------")     #output: 0 1 2 3 4 5 6 7 8 9 10 11 12
+
+# FOR LOOPS START
+# If you want your for loop starting at a different number you can simply pass two arguments in to the range() function
+
+i = 2
+while i < 5:
+    print(i)
+    i = i + 1 # line to prevente a infinit loop
+
+#--ex of the same result in a for loop below
+
+for i in range(2, 5):
+    print(i)
+
+print("---------------")     #output: 2 3 4
+
+for i in range(10, 21):
+    print(i)
+
+print("---------------")
+
+
+# ---- FOR LOOP STEPS
+#for loops we can also specify how much we want to increment the variable by on each interaction of the loop. this called the steps.
+#Ex below:
+
+i = 0
+while i < 10:
+    print(i)
+    i = i + 2 # this lone prevent the infinit loop + will skip ne the number a cada 2 numeros 2, 4, 6, 8 
+
+for i in range(0, 10, 2):
+    print(i)
+
+print("---------------")     #output: 0, 2, 4, 6, 8. Da para pensar como se fosse criar uma tabuada
+
+for i in range(0, 110, 10):
+    print(i)
+print("---------------")    
+
+# ---- FOR LOOPS REVERSE ORDER
+# WE can also use a "for" loop to interate through a sequence of number in reverse order. To do this we can pass a negative number
+# ex below:
+
+i = 10
+while i > 0:
+    print(i)
+    i = i - 1
+
+for i in range(10, 0, -1):
+    print(i)   
+print("---------------")     #output: 10 9 8 7 6 5 4 3 2 1
+
+# This is a little bit trick to read. Use the method reverse() may be a simple way to practice
+for i in range(20, 9, -1):
+    print(i)
+print("---------------")     #output: 20 19 18 17 16 15 14 13 12 11 10
+
+# EASIER WAY TO SOLVE INSTEAD EX ABOVE:
+
+for i in reversed(range(10)):
+    print(i)  
+print("---------------")     #output: 9 8 7 6 5 4 3 2 1 0
+
+# another ex:
+for i in reversed(range(10, 21)):
+    print(i)
+print("---------------")     #output:  20 19 18 17 16 15 14 13 12 11 10  
+
+
+# --- NESTED LOOPS
+# Suppose we wnat to print all possible pairs from the following set of integers 1 2 3. Where the order of the pairs matters. This would look like :
+
+# 1,1  |  1,2  |  1,3
+
+# 2,1  | 2,2   | 2,3
+
+# 3,1  | 3,2   | 3,3
+
+# This can be accomplished by placing a loop inside of another loop. This is called a nested loop
+
+for i in range(1, 4):
+    for j in range(1, 4):
+        print(i, j)
+
+print("---------------")     #output:  1,1  |  1,2  |  1,3 | 2,1  | 2,2   | 2,3 | 3,1  | 3,2   | 3,3
+
+#basicamente a primeira fileira se refere ao variable i e a segunda se refere ao variable j. No caso o loop esta printing numbers de 1 - 3 e fazendo todas os possiveis pares
+# another ex:
+
+for i in range(3, 6):
+    for j in range(3, 6):
+        print(i, j)
+print("---------------")
+
+
