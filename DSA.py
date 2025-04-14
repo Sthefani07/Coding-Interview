@@ -15,7 +15,7 @@ print(python_creation_date)
 print(java_creation_date)
 print(javascript_creation_date)
 print(Sthefani_born_date)
-print("---------------")
+print("-----")
 
 msg1, msg2 = "World", "Hello"
 msg3, msg4, msg5 = "Name", "Is", "My"
@@ -28,7 +28,7 @@ print(msg2)
 print(msg3)
 print(msg4)
 print(msg5)
-print("---------------") 
+print("-----") 
 
 # Variable Types
 age = 29                  # Integer / Numero inteiro
@@ -42,7 +42,7 @@ print(type(temperature))
 print(type(is_true))
 print(type(name))
 print(type(my_list))
-print("---------------") 
+print("-----") 
 
 # exercicio: the acordo com o print(type(variable)) tentar replicar p codigo a cima
 variable = 1
@@ -59,7 +59,7 @@ print(type(variable))
 
 variable = []
 print(type(variable))
-print("---------------") 
+print("-----") 
 
 # Another challenge is reassing the variable to print a integer / numero inteiro
 pi = 3.748798759
@@ -70,7 +70,7 @@ square_root_8 = int(square_root_8)
 
 print(pi)
 print(square_root_8)
-print("---------------") 
+print("-----") 
 
 # Eu posso converter uma sting (numero) para integer da forma feita abaixo
 variable = "10" 
@@ -78,7 +78,7 @@ print(type(variable))
 
 variable = int(variable)
 print(type(variable))
-print("---------------") 
+print("-----") 
 
 # Arithmetic Operators
 
@@ -90,7 +90,7 @@ print(x * y)    # Output : 18
 print(x / y)    # Output : 0.5  float number
 variable = int(variable)
 print(type(variable))
-print("---------------") 
+print("-----") 
 
 ## Exercise 
 a, b, c = 2, 2, 0.5
@@ -102,7 +102,7 @@ print(total_sum)
 print(0 - total_sum)
 print(a * b * c)
 print(total_sum / total_product)
-print("---------------") 
+print("-----") 
 
 # MORE OPERATORS
         # Floor division : //
@@ -115,7 +115,7 @@ x, y = 7, 2
 print(x // y) # Output : 3 ( 7 divided by 2 is 3.5, after rounding donw we get 3)
 print(x % y)  # Output : 1 (7 divided by 2 is 3, with a remainder of 1)
 print(x ** y) # Output : 49 (7 raised to the power of 2 is 49, 7*7 = 49)
-print("---------------") 
+print("-----") 
 
 ## Exercise 
  
@@ -126,14 +126,14 @@ print(product_a_b // c)
 print(product_a_b % c)
 print(a ** b)
 print(b ** c)
-print("---------------")
+print("-----")
 
 # Shorthand Operator
 count = 0
 count = count + 1
 count = count + 2
 print(count)  # Output : 3
-print("---------------")
+print("-----")
 
 # Boolean "OR" = BAsicamente if one of the boolean is true the answer always will be TRUE. 
 #         Thuth table
@@ -149,7 +149,7 @@ print(a or b)             #output False
 print(b or c)             #output True
 print(c or d)             #output True
 print(a or b or c or d)   #output True
-print("---------------")
+print("-----")
 
 #  BOOLEAN "AND" = Basicamente is TRUE only when they both are TRUE
 ##         Thuth table
@@ -165,7 +165,7 @@ print(a and b)             #output False
 print(b and c)             #output False
 print(c and d)             #output True
 print(a and b and c and d) #output False
-print("---------------")
+print("-----")
 
 # BOOLEAN NEGATION
 
@@ -174,13 +174,13 @@ b = False
 print(not a)          #output: False
 print(not b )         #output: True
 print(not(a and b))   #output: True
-print("---------------")
+print("-----")
 a, b, c = False, False, True
 print(not c)           #output: False
 print(not(a and b))    #output: True
 print(not(b or c))    #output: True used    "or"
 print(not(b and c))    #output: False used "and"
-print("---------------")
+print("-----")
 
 # FUNCTION
 def greet():    # greet() = This will be print "Hello world!" 
@@ -192,7 +192,7 @@ def say_goodbye():
 greet()
 say_goodbye() 
 
-print("---------------")
+print("-----")
 
 
 
@@ -215,7 +215,7 @@ def print_number(n):
 
 print_number(10) #output: 10
 print_number(20) #output: 20
-print("---------------")
+print("-----")
 
 #------- PARAMETERS
 # in the code below we defined a function called that greet1() that takes a 
@@ -229,7 +229,7 @@ def greet1(name):
 greet1("Sthefani")   #Output Hello, Sthefani / Argument
 greet1("Nick")       #Output Hello, Nick / Argument
 greet1("Holden")     #Output Hello, Holden / Argument
-print("---------------")
+print("-----")
 
 #-----MULTIPLE PARAMETERS
 #function can be defined to accept more than one parameter. 
@@ -242,7 +242,7 @@ def greet(name, greeting):
 
 greet("Alice", "Hello")                             # output: Hello Alice
 greet("Nick", "I hope you had a great day today,")  # output: I hope you had a great day today, Nick
-print("---------------")
+print("-----")
 #-- another ex: ----
 
 def two_sum(sum1, sum2):
@@ -257,7 +257,7 @@ two_sum(10, 9)          #output: 19
 two_sum(7, 10)          #output: 17
 three_sum(5, 14, 6)     #output: 25
 three_sum(3, 5, 8)      #output: 16
-print("---------------")
+print("-----")
 
 # ---- RETURN STATEMENT
 # Function are even more extensible then they seem. 
@@ -270,7 +270,7 @@ def add_number(x, y):
 
 result = add_number(4, 4) 
 print(result)              #output: 8
-print("---------------")
+print("-----")
 
 #---
 
@@ -281,7 +281,7 @@ print(product(2, 4))  #output: 8
 print(product(8, 2))  #output: 16
 print(product(4, 8))  #output: 32
 print(product(8, 8))  #output: 64
-print("---------------")
+print("-----")
 
 
 
@@ -299,7 +299,7 @@ def greet(name: str) -> None:
     return
 
 print(type(greet("Sthefani")))  
-print("---------------")
+print("-----")
 
 
 
@@ -315,7 +315,7 @@ print_number(11)  #OUTPUT: 11
 
 print(n)          #Output: 10
 
-print("---------------")
+print("-----")
 #another x:
 
 def add_name(name):
@@ -326,7 +326,7 @@ name= "Sthefani"
 
 add_name(name)
 print(name)         #Output: Sthefani
-print("---------------")
+print("-----")
 
 
 #------ DEFAULT ARGUMENTS
@@ -338,7 +338,7 @@ def greet(name="world"):            #PS: The = iqual sign is important here
 
 greet()                             #Output: "Hello, world!"
 greet("Bob")                        #Output: "Hello, Bob!"    
-print("---------------")
+print("-----")
 
 
 def greet(greeting="Hello", name="world"):   # This is valid 
@@ -352,7 +352,7 @@ def greet(greeting, name="world"):           # This is valid as well
 # def greet(greeting="Hello", name):            # This is NOT valid
 #     print( greeting + ", " + name + "!")    
 
-print("---------------")
+print("-----")
 
 
 
@@ -363,7 +363,7 @@ if account_balance <0:
         print("Your account is overdrawn") #this print statement belongs to if account_balance, because it indented and follow by :
 
 print("This is always printed.")           # This will alwais be printed  
-print("---------------")  
+print("-----")  
 
 # another ex:
 def is_account_balance_low(balance: int) -> None:
@@ -373,7 +373,7 @@ def is_account_balance_low(balance: int) -> None:
 is_account_balance_low(99)  # call the function here
 is_account_balance_low(100)
 is_account_balance_low(101) # this will not be printed
-print("---------------")
+print("-----")
 
 
 
@@ -388,7 +388,7 @@ def pay_bill(balance: int, bill: int) -> int:
 print(pay_bill(100, 30))     #Output: 70
 print(pay_bill(100, 100))    #OUtput: 0
 print(pay_bill(200, 700))    # here prints the total of the balance 
-print("---------------")
+print("-----")
 
 # another ex:
 def guest_party(invated: int, cancelation: int) -> int:
@@ -400,7 +400,7 @@ def guest_party(invated: int, cancelation: int) -> int:
 print(guest_party(10, 8))    #Output: 2
 print(guest_party(10, 15))   #Output: 10 aqui no caso seria: se 10 pessoas foram convidadas e 15 cancelou entao total correto de cancelameto foi 10. pois 5 nao existiu ou nunca foram convidados.
 print(guest_party(6, 8))     #output: 6
-print("---------------")
+print("-----")
 
 # ----IF-ELSE STATEMENT 
 
@@ -409,7 +409,7 @@ if balance < 0:
     print("account is over")
 else:
     print("account is in good standers")
-    print("---------------")
+    print("-----")
 
  # another exemplo:
 
@@ -422,7 +422,7 @@ def get_min(a: int, b:int) -> int:
 print(get_min(10, 11))     
 print(get_min(5, -7)) 
 print(get_min(20, 20))    
-print("---------------")
+print("-----")
 
 def weather_in_Seattle(cold:int, hot:int) -> int:  #cold:20 < hot:70)
     if cold >= hot:
@@ -433,7 +433,7 @@ def weather_in_Seattle(cold:int, hot:int) -> int:  #cold:20 < hot:70)
 print(weather_in_Seattle(10,60))   #Output: Go outside...
 print(weather_in_Seattle(20, 19))  #Output: Today is perfect to drink...
 print(weather_in_Seattle(20, 25))  #Output: Go outside...  
-print("---------------")
+print("-----")
 
 # ELSE- IF STATEMEANTS
 # we can create of condicional statements using the "elif" keyword(standingfoe else-if)
@@ -448,7 +448,7 @@ def check_balance(balance):
         return "Your account balance is low"
     else:
         return "Your acccount balance is healthy."
-        print("---------------")
+        print("-----")
 
 def check_range(num: int) -> str:
     if num < 0:
@@ -464,7 +464,7 @@ print(check_range(-10))   #Output: negative
 print(check_range(0))     #Output: Zero
 print(check_range(9))     #Output: Positive single digit
 print(check_range(1000))  #Output: Positive multi digit  
-print("---------------")
+print("-----")
 
 #another ex:
 def weather_in_Seattle(cold:int) -> str:
@@ -478,7 +478,7 @@ print(weather_in_Seattle(10))
 print(weather_in_Seattle(57))    
 print(weather_in_Seattle(63))    
 print(weather_in_Seattle(90))    
-print("---------------")
+print("-----")
 
 def weather_in_Seattle(cold: int) -> str:
     if cold <= 55:
@@ -493,7 +493,7 @@ print(weather_in_Seattle(10))
 print(weather_in_Seattle(57))    
 print(weather_in_Seattle(63))    
 print(weather_in_Seattle(90))    
-print("---------------")
+print("-----")
 
 
 # ----- LOGIC CONDITION
@@ -509,7 +509,7 @@ print(discount_applies(18))
 print(discount_applies(40))  
 print(discount_applies(65))  
 print(discount_applies(70))        
-print("---------------")
+print("-----")
 
 
 # another ex: Lets say children yonger than 12yo dont pay to entrance and older than 65 also dont pay. Others age pay $25,50 
@@ -523,7 +523,7 @@ def ticket_entrance(age: int) -> str:
 print(ticket_entrance(13))   #Output: Your ticket cost $25,50
 print(ticket_entrance(70))   #Output: Your entrance is 0,00 today.
 print(ticket_entrance(35))   #Output: Your ticket cost $25,50
-print("---------------")
+print("-----")
 
 def ticket_entrance(age: int) -> bool:
     if age < 12 or age >= 65:
@@ -534,7 +534,7 @@ def ticket_entrance(age: int) -> bool:
 print(ticket_entrance(13))   #Output: False
 print(ticket_entrance(70))   #Output: True
 print(ticket_entrance(35))   #Output: False
-print("---------------")
+print("-----")
 
 #----  WHILE LOOP
 
@@ -551,7 +551,7 @@ while i < 5:
     #I love Python!
     #I love Python!
     #I love Python!      ## It printed 5x because i = 0    in case it was i=3 the output would be (3x = I love Python! )
-    print("---------------")
+    print("-----")
 
     # -- another exemplo use the loop exactly 12x:
 
@@ -559,7 +559,7 @@ i = 1
 while i < 13:
     print("This loop will run 12 times")
     i = i + 1 #output: it ran 12 time the print statement.
-print("---------------")    
+print("-----")    
 
 
 # WHILE LOOP COUNTING
@@ -570,7 +570,7 @@ while n <= 9:
     print(n)
     n = n + 1
 
-print("---------------")     
+print("-----")     
     
 
 convidados = 1
@@ -578,7 +578,7 @@ while convidados <= 10:
    # print("Convidados estao todos presentes no momento!") 
     print(convidados)
     convidados = convidados + 1
-print("---------------")     
+print("-----")      
 
 
 # WHILE LOOP MULLTIPLES
@@ -586,17 +586,17 @@ n = 10
 while n <= 90:               # prestar atencao no simbolo de > ou < pois estava fazendo confusao com eles e afetando drasticamento no resultado
     print(n)
     n = n + 10
-print("---------------")     #output: 10, 20, 30, 40, 50, 60, .... 90
+print("-----")      #output: 10, 20, 30, 40, 50, 60, .... 90
 
 
-# ------ FOR LOOPS
+# ------ FOR LOOPS -------------
 # The loop starts with a key word "for". 1- Next you need to specify the variable name, This variable will represent each item in the sequence. 3- After the varible name, you need to use the keyword "in". 4- Finally, you need to specify the sequence you want to iterate over. for exemple function = range(10). This function generates a sequence of numbers from 0 to 9. 10 is not included in the sequence.
 
 for num in range(13):
     print(num)    
-print("---------------")     #output: 0 1 2 3 4 5 6 7 8 9 10 11 12
+print("-----")   #output: 0 1 2 3 4 5 6 7 8 9 10 11 12
 
-# FOR LOOPS START
+# ---------- FOR LOOPS START -----------
 # If you want your for loop starting at a different number you can simply pass two arguments in to the range() function
 
 i = 2
@@ -609,15 +609,15 @@ while i < 5:
 for i in range(2, 5):
     print(i)
 
-print("---------------")     #output: 2 3 4
+print("-----")     #output: 2 3 4
 
 for i in range(10, 21):
     print(i)
 
-print("---------------")
+print("-----")
 
 
-# ---- FOR LOOP STEPS
+# ---- FOR LOOP STEPS --------------------
 #for loops we can also specify how much we want to increment the variable by on each interaction of the loop. this called the steps.
 #Ex below:
 
@@ -629,13 +629,13 @@ while i < 10:
 for i in range(0, 10, 2):
     print(i)
 
-print("---------------")     #output: 0, 2, 4, 6, 8. Da para pensar como se fosse criar uma tabuada
+print("-----")     #output: 0, 2, 4, 6, 8. Da para pensar como se fosse criar uma tabuada
 
 for i in range(0, 110, 10):
     print(i)
-print("---------------")    
+print("-----")    
 
-# ---- FOR LOOPS REVERSE ORDER
+# ---------- FOR LOOPS REVERSE ORDER ---------------
 # WE can also use a "for" loop to interate through a sequence of number in reverse order. To do this we can pass a negative number
 # ex below:
 
@@ -646,26 +646,26 @@ while i > 0:
 
 for i in range(10, 0, -1):
     print(i)   
-print("---------------")     #output: 10 9 8 7 6 5 4 3 2 1
+print("-----")     #output: 10 9 8 7 6 5 4 3 2 1
 
 # This is a little bit trick to read. Use the method reverse() may be a simple way to practice
 for i in range(20, 9, -1):
     print(i)
-print("---------------")     #output: 20 19 18 17 16 15 14 13 12 11 10
+print("-----")     #output: 20 19 18 17 16 15 14 13 12 11 10
 
 # EASIER WAY TO SOLVE INSTEAD EX ABOVE:
 
 for i in reversed(range(10)):
     print(i)  
-print("---------------")     #output: 9 8 7 6 5 4 3 2 1 0
+print("-----")     #output: 9 8 7 6 5 4 3 2 1 0
 
 # another ex:
 for i in reversed(range(10, 21)):
     print(i)
-print("---------------")     #output:  20 19 18 17 16 15 14 13 12 11 10  
+print("-----")     #output:  20 19 18 17 16 15 14 13 12 11 10  
 
 
-# --- NESTED LOOPS
+# -------- NESTED LOOPS --------
 # Suppose we wnat to print all possible pairs from the following set of integers 1 2 3. Where the order of the pairs matters. This would look like :
 
 # 1,1  |  1,2  |  1,3
@@ -680,7 +680,7 @@ for i in range(1, 4):
     for j in range(1, 4):
         print(i, j)
 
-print("---------------")     #output:  1,1  |  1,2  |  1,3 | 2,1  | 2,2   | 2,3 | 3,1  | 3,2   | 3,3
+print("-----")     #output:  1,1  |  1,2  |  1,3 | 2,1  | 2,2   | 2,3 | 3,1  | 3,2   | 3,3
 
 #basicamente a primeira fileira se refere ao variable i e a segunda se refere ao variable j. No caso o loop esta printing numbers de 1 - 3 e fazendo todas os possiveis pares
 # another ex:
@@ -688,6 +688,117 @@ print("---------------")     #output:  1,1  |  1,2  |  1,3 | 2,1  | 2,2   | 2,3 
 for i in range(3, 6):
     for j in range(3, 6):
         print(i, j)
-print("---------------")
+print("-----")
 
 
+# ----------Control Flow ------------
+# Key words 
+# "Break" exits the loop immediately 
+# "continue": Skips the remaining code inside the loop for the current iteration and moves to the next iteration. 
+# "pass": Acts as a placeholder and does nothing
+
+for i in range(1, 8):
+    pass
+
+if True:
+    pass
+
+def test_function():
+    pass
+
+for i in range(1, 8):
+    break
+
+
+#another ex:
+
+for i in range(1, 8):
+    if i == 3:  
+        continue
+    elif i == 6:
+        break
+    print(i)
+print("-----")
+
+# ----------- LENGTH FUNCTION ----------
+# Suppose we had a string like: my_str = "Jaboticaba" and we wanted to know how many characters are in the string. We can use a built in function called: len() to find the length of a string(and many other data types)
+
+my_str = "Jaboticaba"
+print(len(my_str)) #output: 10
+print("-----")
+
+# another ex:
+def get_longer_word(word1: str, word2: str) -> str:
+    if len(word1) >= len(word2): # nessa linha o sinal de " = " eh importante
+        return word1
+    else:
+        return word2
+
+
+
+print(get_longer_word("yellow", "red"))
+print(get_longer_word("red", "blue"))    
+print(get_longer_word("green", "yellow")) 
+print("-----")
+
+# ------------- STRING INDEXING  ----------------
+# if i want to access individual characters from a string. I can do this by indexing the string
+
+my_str = "Hello"
+print(my_str[0])  #Output: H
+print(my_str[1])  #Output: e
+print(my_str[2])  #Output: l
+print(my_str[3])  #Output: l
+print(my_str[4])  #Output: o
+print("-----")
+
+# another ex:
+
+def print_last_char(word: str) -> None:
+    last_index = len(word) - 1 
+    print(word[last_index])
+
+print_last_char("Sthefani D")    # Output: D
+print("-----")
+
+# --------------- STRING LOOP ------------------
+# What if we want to access each character in a string separately? 
+# With our knowledge of loops, indexing and the len() function we can accomplish this.
+
+my_string = "Hello, World!"
+
+length = len(my_string)  # 13
+
+for i in range(length):
+    print(my_string[i])
+print("-----")
+
+
+#another ex:
+
+def print_string_characters(my_str: str) -> None:
+    for i in range(len(my_str)):
+        print(my_str[i])
+print("-----")
+
+print_string_characters("Hello World!")  #call the function
+print_string_characters("Good Job!") 
+print("-----")
+
+# ----------- STRING LOOP SHORTHAND ------------------
+# Consider thhe following code: 
+
+my_string = "Hello"
+
+for i in range(len(my_string)):
+    print(i, my_string[i])     # para ter o numero tbm printed, apenas adicionar o "i," 
+
+
+# another ex:
+
+
+def print_string_characters(word1: str, word2:str) -> None:
+    pass
+
+
+print_string_characters("Hello,World!","Good Job!")
