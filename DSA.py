@@ -910,3 +910,134 @@ print(reverse_string("Seattle"))   # output: elttaeS
 print(reverse_string("Sthefani"))  # output: inafehtS
 print(reverse_string("Hello"))     # output: olleH
 print("-----")
+
+
+# ----------------------- STRINGS ARE IMMUTABLE ----------------------------
+
+# it's important to know that whenever you slice a string, you are not modifying the underlying string. Instead, you are creating a new string with the sliced characters. This is because strings are immutable in Python, which means they cannot be changed after they are created.
+
+message = "I will never change."
+
+#message[0] = "x" # This will cause a error
+
+# In the code above, we cannot change individual characters, we can only reassing the entire srting.
+ 
+ # another ex:
+
+message = "I will never change."
+
+before_second = message[:1] # "I"
+after_second = message[2:]  #"Will never change."
+
+new_message = before_second + after_second
+print(new_message)
+print("-----")
+
+#another ex:
+
+def remove_fourth_character(word:str) -> str: #we will remove the fourth index
+    first_part = word[:3]
+    second_part= word[4:]
+    return first_part + second_part
+
+
+print(remove_fourth_character("Seattle"))
+print(remove_fourth_character("Bellevue"))
+print("-----")
+
+
+# ----------------------- STRING FORMATTING ----------------------------
+
+# We saw that we can concatenate string using the + operator. However, this can be cumbersome when we have many strings to concatenate. Python provides a more elegant way to format strings using the format method.
+
+# FOrmat method on the string and pass in the values we want to replace the placeholders with.
+
+name = "Alice"
+age = 25
+
+msg = "Hello, {}. You are {} years old.".format(name, age)
+
+print(msg) # output: Hello, Alice. You are 25 years old.
+print("-----")
+
+# another ex: 
+
+name = "Sthefani"
+age = 29
+
+msg = f"Hello, {name}. You are {age} years old."
+print(msg)
+print("-----")
+
+def say_goodbye(name: str, hour: int) -> str:
+
+    return f"Goodbye, {name}, See you again at {hour} o'clock."
+
+print(say_goodbye("bob", 12))
+print(say_goodbye("Holden", 4))
+print(say_goodbye("Sabrina", 9))
+print("-----")
+
+
+# ----------------------- INTRO TO LIST ----------------------------
+
+#In Python a list is a collection of items that are stored in a specific order.
+
+my_list = [1, 2, 3]
+
+print(len(my_list))  #output: 3
+print(my_list[0])    #output: 1
+print(my_list[1])    #output: 2
+print(my_list[2])    #output: 3
+
+# A difference between list and strings. List are mutable, meaning we can change the value of the elementd in the lists.
+
+my_list = [1, 2, 3, 4, 5]
+
+my_list[0] = 10
+
+print(my_list[0])  # Output: 10
+
+# another ex:
+
+my_list = ["I", "am", "a", "list"]
+
+print(my_list[0]) #output: I
+print(my_list[1]) #Output: am
+print(my_list[2]) #Output: a
+print(my_list[3]) #Output: list
+
+
+# another exemplo:
+
+my_list = [1, 7, 5, 4, 3, 2]
+
+print(my_list[1])
+print(my_list[2])
+print(my_list[0])
+print(len(my_list))  #Output: 6
+
+
+
+# ----------------------- LIST OPERATOR ----------------------------
+
+#List can also be used within conditional statements. For example, we can check if a list is empty or not:
+
+my_list = [1, 2, 3]
+
+if len(my_list) > 0:
+    print("The list is not empty")
+
+else:
+    print("THe list is empty.")
+
+# We can also use the "in" operator to check if an element is present in a list:
+
+
+my_list = [1, 2, 3]
+
+if 2 in my_list:  # if 2 is in my list, then do .... 
+    print("2 is in the list")
+else:
+    print("2 is not in the list")    
+
