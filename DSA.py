@@ -1041,3 +1041,56 @@ if 2 in my_list:  # if 2 is in my list, then do ....
 else:
     print("2 is not in the list")    
 
+#another ex: ------
+
+def check_list_empty(my_list) -> bool:
+    if len(my_list) == 0:
+        return True
+    return False
+
+#or the same example below in a shorter version:
+def check_list_empty(my_list) -> bool:
+    return len(my_list) == 0 
+print("-----")
+
+#another ex: ------
+def check_element_in_list(my_list, element) -> bool:
+    if element in my_list:
+        return True
+    return False
+
+#or the same example below in a shorter version:
+def check_element_in_list(my_list, element) -> bool:
+    return element in my_list
+
+
+print(check_list_empty([]))
+print(check_list_empty([1, 2, 3]))
+
+print(check_element_in_list([1,2, 3], 1))
+print(check_element_in_list([1, 2, 3], 4))
+print("-----")
+
+# ----------------------- LIST LOOPING ----------------------------
+
+# We can also loop through lists similar t how we loop through strings:
+
+# By using the length of the list:
+my_list = [1, 2, 3, 4, 5]
+
+length = len(my_list)
+
+for i in range(length):
+    print(my_list[i])
+print("-----")     # Output: 1 2 3 4 5 
+
+    # Or by using the "in" operator :
+
+my_list = [1, 2, 3, 4, 5]  
+
+for element in my_list:
+    print(element)
+print("-----")  # Output: 1 2 3 4 5 
+
+
+
