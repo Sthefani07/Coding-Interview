@@ -1103,6 +1103,93 @@ def count_x(nums: List[int], x: int) -> int:
             result = result + 1
     return result        
 
-print(count_x([1, 2, 5, 6, 5], 5))
-print(count_x([4, 3, 6, 1, 6], 5))
-print(count_x([4, 7, 7, 6, 7, 6], 7))
+print(count_x([1, 2, 5, 6, 5], 5))    #output: 2
+print(count_x([4, 3, 6, 1, 6], 5))    #output: 0
+print(count_x([4, 7, 7, 6, 7, 6], 7)) #output: 3
+print("-----")
+
+
+# ----------------------- LIST FUNCTIONS ----------------------------
+
+# Python also provides some built in functions to get the sum, minimum, and maximum of a list:
+
+my_list = [1, 2, 3, 4, 5]
+
+print(sum(my_list)) #Output: 15
+print(min(my_list)) #Output: 1
+print(max(my_list)) #Output: 5
+print("-----")
+
+# 1* The sum() funtion returns the sum of all the elements in the list
+# 2* The min() function returns the smallest element in the list.
+# 3* The max() function returns the largest element in the list.
+
+#another ex:
+
+from typing import List
+
+def get_sum(my_list: List[int]) -> int:
+    total = 0
+    for n in my_list:
+        total += n 
+    return total
+
+def get_min(my_list: List[int]) -> int:
+    min_num = my_list[0]
+    for n in my_list:
+        if n < min_num:
+            min_num = n
+    return min_num
+
+def get_max(my_list: List[int]) -> int:
+    max_num = my_list[0]
+    for n in my_list:
+        if n > max_num:
+            max_num = n
+    return max_num
+
+
+print(get_sum([1, 2, 3, 4, 5]))  #Output: 15
+print(get_sum([5, 4, 5, 6]))     #Output: 20
+print("-----")
+print(get_min([7, 3, 4, 5]))     #Output: 3
+print(get_min([5, 4, 5, 6]))     #Output: 4
+print("-----")
+print(get_max([7, 3, 4, 5]))     #Output: 7
+print(get_max([7, 9, 4, 1]))     #Output: 9
+print("-----")
+
+
+# ----------------------- LIST APPEND ----------------------------
+
+# We can do more than just change individual elements within a list. We can also add new element to the end of the list using the append() function.
+
+my_list = [1, 2, 3]
+print(my_list) #output: [1,2,3]
+
+my_list.append(4)
+print(my_list) # Output: [1,2,3,4]
+print("-----")
+
+# A few thing to notice:
+
+# 1* We can print an a entire list at once.
+
+# 2* The append() function adds an element to the end to the list. This is not a separate function, it's called with a period after the list name (append()). This is called a method. It is a function that is associated with a specific object(in this case a list is an object). 
+
+# 3* After calling append, the original list has been modified to include the new element at the end. The length increased from 3 to 4.
+
+
+#ex: It should append(add to the end of the list) each number from elements to the end of the my_list and return the modified list.
+
+from typing import List
+
+def append_to_list(my_list: List[int], elements: List[int]) -> List[int]:
+
+    for n in elements:
+        my_list.append(n)
+    return my_list
+
+print(append_to_list([1, 2, 3], [4, 5])) #Output: [1, 2, 3, 4, 5]
+print(append_to_list([], [1, 2, 3, 4]))  #Output: [1, 2, 3, 4]
+print("-----")
