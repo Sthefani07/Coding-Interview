@@ -1092,5 +1092,17 @@ for element in my_list:
     print(element)
 print("-----")  # Output: 1 2 3 4 5 
 
+#another ex: how many times does x appear in this input?
 
+from typing import List # used to add type hint for list
 
+def count_x(nums: List[int], x: int) -> int:
+    result= 0
+    for n in nums:
+        if n == x:
+            result = result + 1
+    return result        
+
+print(count_x([1, 2, 5, 6, 5], 5))
+print(count_x([4, 3, 6, 1, 6], 5))
+print(count_x([4, 7, 7, 6, 7, 6], 7))
