@@ -1223,7 +1223,10 @@ def remove_from_list(my_list: List[int], index: int) -> List[int]:
     my_list.pop(index)
     return my_list
 
-
+print(remove_from_list([1, 2, 3, 4, 5], 2))
+print(remove_from_list([1, 2, 3, 4, 5], 0))
+print(remove_from_list([1, 2, 3, 4, 5], 4))
+print("-----")
 
 def pop_n_from_list(my_list: List[int], n:int) -> List[int]:
     while n > 0:
@@ -1232,11 +1235,98 @@ def pop_n_from_list(my_list: List[int], n:int) -> List[int]:
     return my_list
 
 
-print(remove_from_list([1, 2, 3, 4, 5], 2))
-print(remove_from_list([1, 2, 3, 4, 5], 0))
-print(remove_from_list([1, 2, 3, 4, 5], 4))
-
-
 print(pop_n_from_list([1, 2, 3, 4, 5], 2))
 print(pop_n_from_list([1, 2, 3, 4, 5], 0))
+print("-----")
 
+# ----------------------- LIST FIND ----------------------------
+
+# ----------------------- LIST SLICING ----------------------------
+
+
+
+# ----------------------- TUPLES ----------------------------------
+
+# Tuples are very simple to lists, but they have on key difference: THEY ARE IMMMUTABLE, ou seja nao pode mudar a sequencia.  This means once a tuple is created, it cannot be changed. We can create a tuple by using parentheses instead of square brackets:
+
+my_tuples = (4, 5, 6)
+print(my_tuples)  #Output: (4, 5, 6)
+
+# We can index it just like a list: ---
+my_tuples = (4, 5, 6)
+
+print(my_tuples[0])   #Output:  4
+print(my_tuples[1])    #Output: 5
+
+# We can also slicing:
+
+my_tuples = (4, 5, 6)
+print(my_tuples[1:])  #output: (5, 6)
+print("-----")
+
+# WE CANNOT modify a tuple and cannot call append() or POP() since this functions would modify it
+
+# Its common to use tuples to store related data.
+
+from typing import Tuple
+
+def create_pair(name: str, age: int) -> tuple[str, int]:
+    return(name, age)
+
+
+print(create_pair("Alice" , 25))
+print(create_pair("Charlie", 30))
+print(create_pair("Bob", 35))
+print("-----")
+
+
+# ----------------------- INTRO TO SETS ----------------------------------
+
+# In Python a SET is very similar to a LIST, with a few key differences.
+
+# A set is unordered, meaning the element are not stored in a specific order. If order is important, you should use a list. Cause order in sets can be unpredictable
+
+# a SET can only contain unique elements. If you try to add a duplicate elemente to a set, it will be ignored.
+
+# example:
+
+my_set = {1, 2, 3}
+print(my_set) #output: {1, 2, 3}
+print("-----")
+
+my_set = set()
+
+my_set.add(1)
+my_set.add(2)
+my_set.add(3)
+
+print(my_set) #output {1, 2} Repare que o segundo (1) foi ignorado
+print("-----")
+
+
+from typing import List, Set
+
+def list_to_set(nums: List[int]) -> Set[int]:
+    my_set = set()
+    for n in nums:
+        my_set.add(n)
+    return my_set
+
+print(list_to_set([1, 2, 3, 4, 5]))
+print(list_to_set([1, 1, 2, 2, 3, 3]))
+print(list_to_set([1, 2, 3, 4, 5, 5, 5, 3, 4, 5]))
+print("-----")
+
+
+# ----------------------- SET OPERATIONS ----------------------------------
+
+# We can also perform Various operations on sets in Python. We can remove elements from a set using the remove() function. If the element is not present in the set , a KeyError will be raised
+
+my_set= {1, 2, 3}
+
+my_set.remove(2)
+print(my_set) # Output: {1, 3}
+
+#my_set.remove(4)     # Raised a KeyError
+
+# Just like with list, we can loop over elements with a set using "for" loops. The difference is that we cant access elements by index because sets are unordered. The order that we loop over a set is not guaranteed
